@@ -20,8 +20,16 @@ class Result {
     public static void solve(double meal_cost, int tip_percent, int tax_percent) {
     // Write your code here
 
-    meal_cost += (meal_cost * (tip_percent/100)) + (meal_cost * (tax_percent/100));
+    meal_cost += (meal_cost * (tip_percent/100.0)) + (meal_cost * (tax_percent/100.0));
     meal_cost = Math.round(meal_cost);
+
+    /*
+        In the line where you calculate the tip and tax amounts, you are performing integer division, 
+        which results in truncating the decimal part. This leads to incorrect calculations. 
+        To fix this, you should convert at least one of the operands to a double before performing the division.
+        Changed '100' to '100.0'
+
+    */ 
     
     System.out.println((int)meal_cost);
     }

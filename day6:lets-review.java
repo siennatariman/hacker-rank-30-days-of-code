@@ -15,6 +15,21 @@ public class Solution {
     
     // Firt input is an integer = number of test cases/strings
     int numTestCase = scanner.nextInt();
+    
+    /*
+    ISSUE: After reading an integer using nextInt(), there is still a  newline character ('\n') 
+    left in the buffer. When you then call nextLine() to read the strings, 
+    it consumes this newline character, resulting in an empty string for the first iteration of the loop.
+
+    To fix this, add an extra scanner.nextLine() after reading the number of test cases to 
+    consume the remaining newline character.
+    
+    
+    */
+    
+    
+    // Consume the newline character left in the buffer
+    scanner.nextLine();
     // Counter to keep track of the number of strings received
     int counter = 0;
     

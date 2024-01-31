@@ -22,6 +22,10 @@ public class Solution {
             int arrItem = Integer.parseInt(arrTemp[i]);
             arr.add(arrItem);
         }
+        
+        for(int m = n-1; m>=0; m--){
+            System.out.print(arr.get(m) + " ");
+        }
 
         bufferedReader.close();
     }

@@ -12,12 +12,17 @@ class Solution{
             int phone = in.nextInt();
             // Write code here
             phoneBook.put(name, phone);
-            System.out.println(phoneBook.toString());
+            //System.out.println(phoneBook.toString());
         }
         while(in.hasNext()){
             String s = in.next();
             // Write code here
-            
+            if(phoneBook.containsKey(s)){
+                Integer phoneBookContainer = phoneBook.get(s);
+                System.out.println(s + "=" + phoneBookContainer);
+            } else {
+                System.out.println("Not found");
+            }
         }
         in.close();
     }

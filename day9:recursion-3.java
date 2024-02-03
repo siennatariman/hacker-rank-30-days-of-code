@@ -17,6 +17,13 @@ class Result {
 
     public static int factorial(int n) {
     // Write your code here
+    // Recursive case
+    if(n > 1){
+        return n * factorial(n-1);
+    } // Base Case = 1
+    else {
+        return n;
+    }
 
     }
 

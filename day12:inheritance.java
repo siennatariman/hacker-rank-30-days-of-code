@@ -33,7 +33,12 @@ class Student extends Person{
     *   @param scores - An array of integers denoting the Person's test scores.
     */
     // Write your constructor here
-    
+    Student(String firstName, String lastName, int id, int[] testScores){
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.id = idNumber;
+        this.testScores = testScores;
+    }
     /*	
     *   Method Name: calculate
     *   @return A character denoting the grade.

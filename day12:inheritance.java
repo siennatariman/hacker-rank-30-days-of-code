@@ -42,6 +42,28 @@ class Student extends Person{
     *   @return A character denoting the grade.
     */
     // Write your method here
+    public char calculate(){
+        for(int i=0; i<testScores.length;i++){
+            average += testScores[i];
+        }
+        average = average/testScores.length;
+        
+        if(average >= 90 && average <= 100){
+            finalCharGrade = 'O';
+        } else if(average >= 80 && average < 90){
+            finalCharGrade = 'E';
+        } else if(average >= 70 && average < 80){
+            finalCharGrade = 'A';
+        } else if(average >= 55 && average < 70){
+            finalCharGrade = 'P';
+        } else if(average >= 40 && average < 55){
+            finalCharGrade = 'D';
+        } else if(average < 40){
+            finalCharGrade = 'T';
+        }
+        
+    return finalCharGrade;    
+    }
 }
 
 class Solution {

@@ -23,6 +23,8 @@ class Person {
 
 class Student extends Person{
 	private int[] testScores;
+    private int average = 0;
+    private char finalCharGrade;
     //private int id;
     /*	
     *   Class Constructor

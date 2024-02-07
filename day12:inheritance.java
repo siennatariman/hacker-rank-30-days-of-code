@@ -23,7 +23,7 @@ class Person {
 
 class Student extends Person{
 	private int[] testScores;
-    private int id;
+    //private int id;
     /*	
     *   Class Constructor
     *   
@@ -33,10 +33,8 @@ class Student extends Person{
     *   @param scores - An array of integers denoting the Person's test scores.
     */
     // Write your constructor here
-    Student(String firstName, String lastName, int id, int[] testScores){
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.id = idNumber;
+    public Student(String firstName, String lastName, int id, int[] testScores){
+        super(firstName, lastName, id);
         this.testScores = testScores;
     }
     /*	

@@ -34,7 +34,11 @@ class MyBook extends Book{
     *   Print the title, author, and price in the specified format.
     **/
     // Write your method here
-    
+    void display(){
+        System.out.println("Title: " + title);
+        System.out.println("Author: " + author);
+        System.out.println("Price: " + price);
+    }
 // End class
 }
 

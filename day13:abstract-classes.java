@@ -12,10 +12,10 @@ abstract class Book {
     abstract void display();
 }
 
-MyBook extends Book{
+class MyBook extends Book{
 // Declare your class here. Do not use the 'public' access modifier.
     // Declare the price instance variable
-    
+    private int price;
     /**   
     *   Class Constructor
     *   
@@ -24,7 +24,10 @@ MyBook extends Book{
     *   @param price The book's price.
     **/
     // Write your constructor here
-    
+    MyBook(String title, String author, int price){
+        super(title, author);
+        this.price = price;
+    }
     /**   
     *   Method Name: display
     *   

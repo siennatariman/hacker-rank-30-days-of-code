@@ -12,6 +12,7 @@ abstract class Book {
     abstract void display();
 }
 
+MyBook extends Book{
 // Declare your class here. Do not use the 'public' access modifier.
     // Declare the price instance variable
     
@@ -32,6 +33,8 @@ abstract class Book {
     // Write your method here
     
 // End class
+}
+
 
 public class Solution {
    

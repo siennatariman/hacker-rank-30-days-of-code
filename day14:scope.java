@@ -9,6 +9,7 @@ class Difference {
   	private int[] elements;
   	public int maximumDifference;
     private int storageLargest = 0;
+    private int storageSmallest = 111;
 
 	// Add your code here
     Difference(int[] weAreNumbers){
@@ -18,6 +19,11 @@ class Difference {
         for(int i=0; i<elements.length; i++){
             if(elements[i]>storageLargest){
                 storageLargest = elements[i];
+            }
+        }
+        for(int j=0; j<elements.length; j++){
+            if(elements[j]<storageSmallest){
+                storageSmallest = elements[j];
             }
         }
     }

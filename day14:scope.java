@@ -8,12 +8,19 @@ import java.util.regex.*;
 class Difference {
   	private int[] elements;
   	public int maximumDifference;
+    private int storageLargest = 0;
 
 	// Add your code here
     Difference(int[] weAreNumbers){
         this.elements = weAreNumbers;
     };
-    
+    private void computeDifference(){
+        for(int i=0; i<elements.length; i++){
+            if(elements[i]>storageLargest){
+                storageLargest = elements[i];
+            }
+        }
+    }
 
 } // End of Difference class
 

@@ -10,6 +10,9 @@ class Difference {
   	public int maximumDifference;
 
 	// Add your code here
+    Difference(int[] weAreNumbers){
+        this.elements = weAreNumbers;
+    };
     
 
 } // End of Difference class

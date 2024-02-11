@@ -23,6 +23,14 @@ class Solution {
         // Check if LL is empty. If it is, set new node we just created as the head
         if (head==null){
             head = newNode;
+        } else {
+            // traverse to end of LL
+            Node current = head;
+            while(current.next!=null){
+                current=current.next;
+            }
+            // Insert node at the end
+            current.next = newNode;
         }
     }
 

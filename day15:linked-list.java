@@ -19,6 +19,11 @@ class Solution {
         
         // Create new node, pass data as constructor argument
         Node newNode = new Node(data);
+
+        // Check if LL is empty. If it is, set new node we just created as the head
+        if (head==null){
+            head = newNode;
+        }
     }
 
 	public static void display(Node head) {

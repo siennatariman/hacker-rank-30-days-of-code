@@ -32,6 +32,7 @@ class Solution {
             // Insert node at the end
             current.next = newNode;
         }
+        return head;
     }
 
 	public static void display(Node head) {

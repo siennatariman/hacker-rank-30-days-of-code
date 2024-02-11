@@ -2,10 +2,10 @@ import java.io.*;
 import java.util.*;
 
 class Node {
-	int data;
-	Node next;
+	int data; //integer data field
+	Node next; // instance pointer 
 	Node(int d) {
-        data = d;
+        data = d; 
         next = null;
     }
 }
@@ -14,6 +14,11 @@ class Solution {
 
     public static  Node insert(Node head,int data) {
         //Complete this method
+        //Head points to first node of linked list
+        //Int data is added to end of list as new Node object
+        
+        // Create new node, pass data as constructor argument
+        Node newNode = new Node(data);
     }
 
 	public static void display(Node head) {

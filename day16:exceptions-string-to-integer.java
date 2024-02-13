@@ -14,6 +14,13 @@ public class Solution {
 
         String S = bufferedReader.readLine();
 
+        try{
+           int iAmNum = Integer.parseInt(S); 
+           System.out.println(iAmNum);
+        } catch(NumberFormatException e){
+            System.out.println("Bad String");
+        }
+
         bufferedReader.close();
     }
 }

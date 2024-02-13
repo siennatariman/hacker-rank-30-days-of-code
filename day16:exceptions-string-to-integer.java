@@ -13,7 +13,7 @@ public class Solution {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
         String S = bufferedReader.readLine();
-
+        
         try{
            int iAmNum = Integer.parseInt(S); 
            System.out.println(iAmNum);

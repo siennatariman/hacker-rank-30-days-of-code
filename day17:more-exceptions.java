@@ -3,15 +3,18 @@ import java.io.*;
 
 //Write your code here
 class Calculator{
-    
+    public double result;
     public int power(int n, int p) throws IllegalArgumentException{
         
         if(n<0 || p<0){
             throw new IllegalArgumentException("n and p should be non-negative");
         }
 
-
-        return n^p;
+        // return n raised to p if n or p is not negative
+        result = Math.pow(n,p);
+        int finalResult = (int) result;
+        return finalResult;
+        
     }
     
 }

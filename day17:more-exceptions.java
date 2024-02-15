@@ -14,9 +14,7 @@ class Calculator{
         result = Math.pow(n,p);
         int finalResult = (int) result;
         return finalResult;
-        
     }
-    
 }
 
 class Solution{

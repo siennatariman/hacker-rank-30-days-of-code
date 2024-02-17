@@ -27,6 +27,13 @@ public class Solution {
             arr.add(arrRowItems);
         }
 
+        // For Loop for hourglass
+        for(i=0;i<3;i++){ // for the first row of the hourglass?
+            for(j=){
+
+            }
+        }
+
         bufferedReader.close();
     }
 }

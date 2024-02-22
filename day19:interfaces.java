@@ -6,6 +6,7 @@ interface AdvancedArithmetic{
 }
 class Calculator implements AdvancedArithmetic {
     public int divisorSum(int n) {
+        int sum = 0;
         if(n){
             
         } else if(){

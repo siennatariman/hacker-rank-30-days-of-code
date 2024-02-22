@@ -5,14 +5,15 @@ interface AdvancedArithmetic{
    int divisorSum(int n);
 }
 class Calculator implements AdvancedArithmetic {
+    int sum = 0;
     public int divisorSum(int n) {
-        int sum = 0;
+        
         for(int i=1; i <= n;i++){
             if(n%i==0){
                 sum += i;
             }
         }
-        return 0;
+        return sum;
     }
 }
 

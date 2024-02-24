@@ -3,7 +3,28 @@ import java.util.*;
 
 public class Solution {
     // Write your code here.
-
+    private Stack<Character> myStack;
+    private Queue<Character> myQueue;
+    // Pushes a character onto a stack
+    public void pushCharacter(char ch){
+        // if stack is empty 
+        
+    };
+    
+    // Enqueues a character in the queue instance variable
+    public void enquequeCharacter(char ch){
+        
+    };
+    
+    // Pops and returns the character at the top of the stack instance variable
+    public char popCharacter(){
+        
+    };
+    
+    //
+    public char dequequeCharacter(){
+        
+    };
 
 
     public static void main(String[] args) {

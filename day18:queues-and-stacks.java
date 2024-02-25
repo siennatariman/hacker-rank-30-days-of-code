@@ -5,10 +5,10 @@ public class Solution {
     // Write your code here.
     private Stack<Character> myStack = new Stack<>();
     private Queue<Character> myQueue = new LinkedList<>();
+
     // Pushes a character onto a stack
     public void pushCharacter(char ch){
-        // if stack is empty 
-        
+        this.myStack.push(ch);
     };
     
     // Enqueues a character in the queue instance variable
@@ -21,7 +21,7 @@ public class Solution {
         
     };
     
-    //
+    // Dequeues and returns the firt character in the  queue instance variable
     public char dequequeCharacter(){
         
     };

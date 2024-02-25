@@ -3,8 +3,8 @@ import java.util.*;
 
 public class Solution {
     // Write your code here.
-    private Stack<Character> myStack;
-    private Queue<Character> myQueue;
+    private Stack<Character> myStack = new Stack<>();
+    private Queue<Character> myQueue = new LinkedList<>();
     // Pushes a character onto a stack
     public void pushCharacter(char ch){
         // if stack is empty 

@@ -13,7 +13,7 @@ public class Solution {
     
     // Enqueues a character in the queue instance variable
     public void enquequeCharacter(char ch){
-        
+        this.myQueue.offer(ch);
     };
     
     // Pops and returns the character at the top of the stack instance variable

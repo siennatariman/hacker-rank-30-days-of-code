@@ -5,6 +5,7 @@ public class Solution {
     // Write your code here.
     private Stack<Character> myStack = new Stack<>();
     private Queue<Character> myQueue = new LinkedList<>();
+    char current;
 
     // Pushes a character onto a stack
     public void pushCharacter(char ch){

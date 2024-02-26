@@ -19,9 +19,10 @@ public class Solution {
     
     // Pops and returns the character at the top of the stack instance variable
     public char popCharacter(){
+        current = this.myStack.peek();
         this.myStack.pop();
         
-        return this.myStack.peek();
+        return current;
     };
     
     // Dequeues and returns the firt character in the  queue instance variable

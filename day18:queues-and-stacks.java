@@ -25,7 +25,7 @@ public class Solution {
         return current;
     };
     
-    // Dequeues and returns the firt character in the  queue instance variable
+    // Dequeues and returns the first character in the  queue instance variable
     public char dequequeCharacter(){
         current = this.myQueue.peek();
         this.myQueue.poll();

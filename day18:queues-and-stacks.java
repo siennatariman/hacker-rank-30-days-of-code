@@ -27,9 +27,10 @@ public class Solution {
     
     // Dequeues and returns the firt character in the  queue instance variable
     public char dequequeCharacter(){
+        current = this.myQueue.peek();
         this.myQueue.poll();
         
-        return this.myQueue.peek();
+        return current;
     };
 
 

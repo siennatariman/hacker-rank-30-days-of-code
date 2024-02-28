@@ -10,6 +10,10 @@ import java.util.regex.*;
 
 public class Solution {
     public static void main(String[] args) throws IOException {
+        int numSwaps;
+        int firstElement;
+        int lastElement
+
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
         int n = Integer.parseInt(bufferedReader.readLine().trim());

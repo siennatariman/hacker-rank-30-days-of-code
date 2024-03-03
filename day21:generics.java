@@ -9,7 +9,7 @@ class Printer <T> {
     **/
     
     // Write your code here
-    public void printArray(){
+    public <T> void printArray(T[] array){
         
     }
 

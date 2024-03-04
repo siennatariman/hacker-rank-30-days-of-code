@@ -10,6 +10,9 @@ class Printer <T> {
     
     // Write your code here
     public <T> void printArray(T[] array){
+        for(int i=0; i < this.array.length(); i++){
+            System.out.println(this.array[i]);
+        }
         
     }
 
